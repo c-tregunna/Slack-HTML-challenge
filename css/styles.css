@@ -1,174 +1,174 @@
 /* GLOBAL */
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-	/* ---- Float clearfix ---- */
+/* ---- Float clearfix ---- */
 
 .clearfix::after {
-	content: " ";
-	display: table;
-	clear: both;
+  content: " ";
+  display: table;
+  clear: both;
 }
 
 body {
-    background-color: #e1e7ea;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
+  background-color: #e1e7ea;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
 }
 
 /* HEADINGS */
 
 h1 {
-    color: white;
-    text-shadow: 1px 1px 1px #000;
-    text-align: center;
-    font-size: 3em;
-    margin-bottom: 0;
-    margin-top: 50px;
+  color: white;
+  text-shadow: 1px 1px 1px #000;
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 0;
+  margin-top: 50px;
 }
 
 h2 {
-    text-align: center;
-    font-style: italic;
-    color: white;
-    margin-top: 5px;
-    font-size: 1.25em;
-    font-weight: 200;
-    letter-spacing: 2px;
+  text-align: center;
+  font-style: italic;
+  color: white;
+  margin-top: 5px;
+  font-size: 1.25em;
+  font-weight: 200;
+  letter-spacing: 2px;
 }
 
 h3 {
-    font-size: 1.5em;
-    text-shadow: 1px 1px 2px #999;
-    font-weight: 200;
-    letter-spacing: 2px;
+  font-size: 1.5em;
+  text-shadow: 1px 1px 2px #999;
+  font-weight: 200;
+  letter-spacing: 2px;
 }
 
 /* HEADER */
 
 .header {
-    background: url('../images/header-img.jpg') no-repeat bottom center ;
-    background-size: cover;
-    overflow: hidden;
-    height: 300px;
-    border-bottom: 4px solid #c8ccd8;
+  background: url("../images/header-img.jpg") no-repeat bottom center;
+  background-size: cover;
+  overflow: hidden;
+  height: 300px;
+  border-bottom: 4px solid #c8ccd8;
 }
 /* navigation */
-
+nav {
+  display: flex;
+  justify-content: center;
+}
 nav ul {
-    color: white;
-    float: right;
-    margin-right: 60px;
+  color: white;
+  float: right;
 }
 
 nav ul li {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 1.25em;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1.25em;
 }
 
 a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 nav li a:hover {
-    border-bottom: 1px solid;
+  border-bottom: 1px solid;
 }
-
 
 /* MAIN */
 
 .main {
-    width: 80%;
-    margin: auto;
+  width: 80%;
+  margin: auto;
 }
 
 .beta {
-    text-align: center;
-    font-size: 1.25em;
+  text-align: center;
+  font-size: 1.25em;
 }
 
 /* FORM */
 
 form {
-    outline: 0;
-    background-color: white;
-	width: 100%;
-	color: black;
-	margin: 40px auto;
-	text-align: left;
-    max-width: 600px;
-    padding: 40px;
-    border-radius: 5px;
-    box-shadow: 0 2px 2px #666;
+  outline: 0;
+  background-color: white;
+  width: 100%;
+  color: black;
+  margin: 40px auto;
+  text-align: left;
+  max-width: 600px;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px #666;
 }
 
 fieldset {
-	border: none;
+  border: none;
 }
 
 input[type="text"],
 input[type="email"] {
-	width: 100%;
-	font-size: 1.25em;
-	height: 40px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 0 3px 2px #666;
-    border: 1px solid;
+  width: 100%;
+  font-size: 1.25em;
+  height: 40px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 3px 2px #666;
+  border: 1px solid;
 }
 
 input[type="text"]:focus,
-input[type="email"]:focus
- {
-	outline: none;
-	/*border: 2px solid #001E3D;*/
-    background-color: #eee;
-    border-radius: 5px;
-
+input[type="email"]:focus {
+  outline: none;
+  /*border: 2px solid #001E3D;*/
+  background-color: #eee;
+  border-radius: 5px;
 }
 
 button {
-    background-color:#33A5FF;
-    width: 100%;
-    height: 60px;
-    color: white;
-    padding:6px;
-    margin: auto;
-    font-size: 1em;
-    border-radius: 5px;
+  background-color: #33a5ff;
+  width: 100%;
+  height: 60px;
+  color: white;
+  padding: 6px;
+  margin: auto;
+  font-size: 1em;
+  border-radius: 5px;
 }
 
 button:hover {
-    background-color: #33A5aa;
+  background-color: #33a5aa;
 }
 
 legend {
-	margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 /* MEDIA QUERIES */
 
 @media (min-width: 768px) {
-    .main {
-        width: 60%;
-    }
-    form {
-        width: 80%
-    }
+  .main {
+    width: 60%;
+  }
+  form {
+    width: 80%;
+  }
 
-    h3 {
-        font-size: 2em;
-    }
+  h3 {
+    font-size: 2em;
+  }
 
+  nav {
+    justify-content: flex-end;
+  }
 }
 
 @media (min-width: 1024px) {
-    button {
-        font-size: 2em;
-    }
+  button {
+    font-size: 2em;
+  }
 }
-
-
